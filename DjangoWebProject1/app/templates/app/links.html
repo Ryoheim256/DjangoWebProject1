@@ -1,0 +1,16 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<address>
+    <a href="https://www.djangoproject.com/" target="_blank"> <img src="{% static 'app/content/logo1.png' %}" alt="Django"></a>
+    <a href="https://pypi.org/" target="_blank"> <img src="{% static 'app/content/logo2.png' %}" alt="Python Package Index"></a>
+    <a href="http://azure.microsoft.com" target="_blank"> <img src="{% static 'app/content/logo3.png' %}" alt="Microsoft Azure"></a>
+</address>
+
+{% endblock %}
